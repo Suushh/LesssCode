@@ -1,0 +1,24 @@
+.intro {
+  margin: auto;
+  margin-top: 70px;
+  max-width: 70vw;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 214, 221);
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+.intro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 60px;
+  
+}
+.intro h2 {
+  font-size: 3.7rem;
+  margin-bottom: 60px;
+  
+}
