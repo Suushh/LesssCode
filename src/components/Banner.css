@@ -1,0 +1,17 @@
+/* src/components/Banner.css */
+.banner {
+  margin: 20px auto;
+  max-width: 1500px;
+}
+
+.carousel .slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.carousel .control-dots {
+  
+  z-index: 1 !important; /* Ensure dots are behind the carousel images */
+}
+
+  

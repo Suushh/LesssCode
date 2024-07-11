@@ -1,0 +1,53 @@
+.addDiscussion{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    border-radius: 40px;
+    height: 30vw;
+    background-color: white;
+}
+.addDiscussion h1{
+    font-size: 45px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px;
+}
+.title input{
+    height:50px ;
+    width: 450px;
+
+}
+.title label{
+    margin: 0 11px;
+}
+.content{
+    font-size: 30px;
+    font-weight: 500;
+   margin-bottom: 20px;
+}
+.content input{
+    height:100px ;
+    width: 450px;
+
+}
+.subbtn{
+    border: 2px solid pink;
+    border-radius: 15%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 90px;
+    font-size: 18px;
+    margin: 20px;
+}
+.media{
+    font-size: 30px;
+    font-weight: 500;
+   margin-bottom: 20px;
+}

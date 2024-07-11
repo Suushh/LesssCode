@@ -1,0 +1,94 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 60px;
+  margin-bottom: 30px;
+  padding: 0 60px;
+  box-shadow: 0 6px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.headernav {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-right: 180px;
+}
+
+.headernav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.headernav ul li {
+  gap: 0;
+  margin-right: 20px; /* Adjusted margin between list items */
+  cursor: pointer;
+}
+
+.headernav ul li:hover {
+  text-decoration: underline;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: 70px;
+  width: 350px;
+}
+
+.profile-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000; /* Ensure dropdown menu appears above other elements */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f0f0f0;
+}
