@@ -13,17 +13,54 @@ session_start();
     crossorigin="anonymous"> 
     <title>Document</title>
     <style>
-    .content{
-        max-width: 800px;
-        margin: 0 auto;
-        padding-top: 20%;
+    .content {
+        font-family: 'Arial', sans-serif;
+        background: rgb(255, 227, 232);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        justify-content: space-around;
+        min-height: 480px;
+        margin: 0;
+    }
+    h1 {
+        font-weight: bold;
+            
+    }
+    .btn-custom {
+        border: 1px solid white;
+        background-color: rgb(202, 6, 104);
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+        cursor: pointer;
+    }
+    .btn-custom:active {
+        transform: scale(0.95);
+    }
+    .btn-custom:focus {
+        outline: none;
     }
     </style>
 </head>
 <body>
     <div class="content">
     <div class="row justify-content-center">
-            <div class="col-md-6 col-md-offset-3"  >
+            <div align="center"  >
                 <?php
                     if(isset($_POST["submit"])){
 
@@ -67,17 +104,20 @@ session_start();
                     }
                 }
                 ?>
+            <div class="container">
+            <h1>Sign Up</h1>
             <form action="sign_up.php" method="POST" enctype="multipart/form-data">
-                <label>Username</label>
+                
                 <input type="text" name="username" placeholder="Enter username" class="form-control"><br>
-                <label>Password</label>
+                
                 <input type="password" name="password" placeholder="Enter password" class="form-control"><br>
-                <label>Confirm Password</label>
+                
                 <input type="password" name="confirm_password" placeholder="Confirm password" class="form-control"><br>
                 <label>Profile Picture</label>
                 <input type="file" name="profile" class="form-control"><br>
-                <input type="submit" value="Sign up" class="btn btn-primary" name="submit"><br>
+                <input type="submit" value="Sign up" class="btn-custom" name="submit"><br>
             </form>
+            </div>
 
            
 
