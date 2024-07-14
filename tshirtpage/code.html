@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Screenshot 2024-07-15 003318.png" alt="Logo">
+        </div>
+        <div class="sub-tabs">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Profile</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="menu-toggle">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                &#9776;
+            </a>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Product Details -->
+        <div class="product-details">
+            <div class="product-image">
+                <img id="productImage" src="Screenshot 2024-07-15 004201.png" alt="T-Shirt">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">T-Shirt Name</h2>
+                <div class="specs">
+                    <p><strong class="spec-label">Cloth Material:</strong> Cotton</p>
+                    <p><strong class="spec-label">Size:</strong></p>
+                    <div class="size-buttons">
+                        <button>S</button>
+                        <button>M</button>
+                        <button>L</button>
+                        <button>XL</button>
+                    </div>
+                    <hr class="spec-divider">
+                    <p><strong class="spec-label">Cost of the product:</strong> Rs 799</p>
+                </div>
+                <div class="actions">
+                    <button class="add-to-bag">Add to Bag</button>
+                    <button class="wishlist">Wishlist</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- User Styles Section -->
+    <div class="user-styles">
+        <div class="user-styles-box">
+            <h3 class="section-title">How our users styled the fit</h3>
+            <div class="user-style-carousel">
+                <!-- Existing user-style images -->
+                <div class="user-style-image">
+                    <img src="Screenshot 2024-07-15 004131.png" alt="User Styled T-Shirt 1">
+
+                    <p class="like-count">Likes: <span>200</span></p>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-slide" onclick="changeSlide(-1)">Prev</button>
+                <button class="next-slide" onclick="changeSlide(1)">Next</button>
+            </div>
+        
+            <!-- Button to add user's own picture -->
+            <div class="add-picture-button">
+                <input type="file" id="uploadFile" accept="image/*" onchange="handleFileUpload(event)">
+                <label for="uploadFile">
+                    <span class="add-icon">+</span>
+                </label>
+            </div>
+            <p class="upload-message">Add your own pic showing how you styled the above fit</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
