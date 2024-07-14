@@ -1,0 +1,313 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.sub-tabs {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-tabs a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Mobile Menu styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .sub-tabs {
+        display: none;
+    }
+
+    .search-bar {
+        flex: 1;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .search-bar button {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .mobile-menu a:hover {
+        background-color: #ddd;
+    }
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.specs {
+    margin-bottom: 20px;
+}
+
+.spec-label {
+    font-weight: bold;
+}
+
+.spec-divider {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.size-buttons {
+    margin-top: 10px;
+}
+
+.size-buttons button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.add-to-bag {
+    padding: 10px 20px;
+    background-color: #FF4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.wishlist {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.wishlist:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* User Styles Section */
+.user-styles {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.user-styles-box {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.user-style-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+.user-style-image {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.user-style-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.like-count {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.carousel-controls {
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.carousel-controls button:hover {
+    background-color: #45a049;
+}
+
+.add-picture-button {
+    width: 50px;
+    height: 50px;
+    background-color: #FF4081;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.add-icon {
+    font-size: 23px;
+}
+
+.upload-message {
+    position: fixed;
+    bottom: 90px;
+    right: 90px;
+    background-color: #FF4081;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    display: none;
+    z-index: 1000;
+    text-align: center;
+}
+
+.add-picture-button:hover + .upload-message {
+    display: block;
+}
