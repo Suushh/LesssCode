@@ -11,6 +11,7 @@ import Topwear from './components/Topwear';
 import Bottomwear from './components/Bottomwear';
 import Footwear from './components/Footwear';
 import Accessories from './components/Accessories';
+import MyStyles from './components/MyStyles'; // Import MyStyles component
 import './App.css';
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/categories/bottomwear" element={<Bottomwear />} />
         <Route path="/categories/footwear" element={<Footwear />} />
         <Route path="/categories/accessories" element={<Accessories />} />
+        <Route path="/mystyles" element={<MyStyles />} /> {/* Route for MyStyles */}
       </Routes>
     </div>
   );
@@ -42,6 +44,7 @@ const WrappedApp = () => (
 );
 
 export default WrappedApp;
+
 
 
 
